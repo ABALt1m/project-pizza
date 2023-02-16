@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="container">
+    <h1>Your lucky number is {{ number }}</h1>
+    {% for day in days %}
+    <h4>
+        {{ day }}
+    </h4>
+
+    {% endfor %}
+    <img class="img-fluid img"  src="{{ asset('img/dodge.jpg') }}" alt="">
+    <a href="{{ path('dodge') }}"> dodge 3amak</a>
+</div>
+{% endblock %}
